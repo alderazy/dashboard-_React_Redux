@@ -1,111 +1,91 @@
+@import "tailwindcss";
+
+/* تعريف كلاس .dark لـ Tailwind v4 */
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-cairo: "Cairo", sans-serif;
+}
+
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+  /* ☀️ السيم الفاتح (Light Mode) */
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
+  /* 1. النصوص والعناوين */
+  --text: #475569; /* النص العادي (رمادي هادئ مريح للعين) */
+  --text-muted: #94a3b8; /* النصوص الفرعية / التوضيحية (رمادي فاتح) */
+  --text-heading: #0f172a; /* العناوين الرئيسية (كحلي غامق قريب من الأسود) */
+  --placeholder: #a1a1aa; /* لون نص التلميح داخل الـ Input */
 
+  /* 2. الكروت والأسطح (Cards & Surfaces) */
+  --bg: #ebedee; /* خلفية الصفحة كاملة (أبيض مطفي ناعم) */
+  --card: #ffffff; /* خلفية الكروت والـ Sidebar والـ Header */
+  --card-border: #e2e8f0; /* حدود الكروت والفاصل (Border) */
+  --card-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.05); /* ظل ناعم للكروت */
+
+  /* 3. الهوفر والتفاعل (Hover & Active States) */
+  --hover-bg: #f1f5f9; /* خلفية الهوفر للقوائم والأزرار العادية */
+  --active-bg: #e2e8f0; /* خلفية العنصر المساعد أو النشط (Active) */
+
+  /* 4. الأزرار الرئيسية والـ Accent (Primary Buttons) */
+  --btn-primary-bg: #6366f1; /* خلفية الزر الرئيسي (Indigo مودرن) */
+  --btn-primary-text: #ffffff; /* نص الزر الرئيسي */
+  --btn-primary-hover: #4f46e5; /* هوفر الزر الرئيسي */
+
+  /* 5. الأزرار الثانوية (Secondary / Soft Buttons) */
+  --btn-soft-bg: rgba(99, 102, 241, 0.08); /* خلفية خفيفة جداً للزر الثانوي */
+  --btn-soft-text: #6366f1; /* نص الزر الثانوي */
+  --btn-soft-hover: rgba(99, 102, 241, 0.15); /* هوفر الزر الثانوي */
+
+  /* 6. الأكواد والـ Badges */
+  --code-bg: #f1f5f9;
+
+  --sans: system-ui, "Segoe UI", Roboto, sans-serif;
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
-  color-scheme: light dark;
-  color: var(--text);
-  background: var(--bg);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  @media (max-width: 1024px) {
-    font-size: 16px;
-  }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
-    --code-bg: #1f2028;
-    --accent: #c084fc;
-    --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
-    --social-bg: rgba(47, 48, 58, 0.5);
-    --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
-  }
+.dark {
+  /* 🌙 السيم الغامق (Dark Mode) */
 
-  #social .button-icon {
-    filter: invert(1) brightness(2);
-  }
-}
+  /* 1. النصوص والعناوين */
+  --text: #d1d6dd; /* النص العادي */
+  --text-muted: #64748b; /* النصوص الفرعية */
+  --text-heading: #f8fafc; /* العناوين الرئيسية (أبيض زاهي) */
+  --placeholder: #52525b; /* لون الـ Placeholder */
 
-body {
-  margin: 0;
-}
+  /* 2. الكروت والأسطح (Cards & Surfaces) */
+  --bg: #0f172a; /* خلفية الصفحة (كحلي مظلم عميق) */
+  --card: #1e293b; /* خلفية الكروت والـ Sidebar */
+  --card-border: #334155; /* حدود الكروت */
+  --card-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3); /* ظل عميق */
 
-#root {
-  width: 1126px;
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  border-inline: 1px solid var(--border);
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
+  /* 3. الهوفر والتفاعل (Hover & Active States) */
+  --hover-bg: #334155; /* خلفية الهوفر للـ Dark Mode */
+  --active-bg: #475569; /* خلفية العنصر النشط */
+
+  /* 4. الأزرار الرئيسية والـ Accent (Primary Buttons) */
+  --btn-primary-bg: #818cf8; /* خلفية الزر الرئيسي (أفتح للظلام) */
+  --btn-primary-text: #0f172a; /* نص داكن على الزر الفاتح */
+  --btn-primary-hover: #a5b4fc; /* هوفر الزر الرئيسي */
+
+  /* 5. الأزرار الثانوية (Secondary / Soft Buttons) */
+  --btn-soft-bg: rgba(129, 140, 248, 0.12);
+  --btn-soft-text: #818cf8;
+  --btn-soft-hover: rgba(129, 140, 248, 0.22);
+
+  /* 6. الأكواد والـ Badges */
+  --code-bg: #1e293b;
 }
 
-h1,
-h2 {
-  font-family: var(--heading);
-  font-weight: 500;
-  color: var(--text-h);
+* {
+  font-family: var(--font-cairo) !important;
 }
 
-h1 {
-  font-size: 56px;
-  letter-spacing: -1.68px;
-  margin: 32px 0;
-  @media (max-width: 1024px) {
-    font-size: 36px;
-    margin: 20px 0;
-  }
-}
-h2 {
-  font-size: 24px;
-  line-height: 118%;
-  letter-spacing: -0.24px;
-  margin: 0 0 8px;
-  @media (max-width: 1024px) {
-    font-size: 20px;
-  }
-}
-p {
-  margin: 0;
-}
-
-code,
-.counter {
-  font-family: var(--mono);
-  display: inline-flex;
-  border-radius: 4px;
-  color: var(--text-h);
-}
-
-code {
-  font-size: 15px;
-  line-height: 135%;
-  padding: 4px 8px;
-  background: var(--code-bg);
+::placeholder {
+  color: var(--placeholder) !important;
+  font-family: var(--font-cairo) !important;
 }
