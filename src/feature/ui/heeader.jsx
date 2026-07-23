@@ -11,7 +11,7 @@ export default function header() {
   const theme = useSelector((state) => state.Settheme.theme);
 
   return (
-    <div className=" h-[69px] border border-transparent border-b-[var(--card-border)]">
+    <div className=" h-[69px] shadow border border-transparent border-b-[var(--card-border)]">
       <div className=" w-full h-full items-center px-4 flex justify-between">
         <div>
           <button
@@ -46,9 +46,9 @@ export default function header() {
             className="cursor-pointer h-10 w-10 bg-[var(--hover-bg)] hover:bg-[var(--active-bg)] transition-colors duration-75 rounded-full "
           >
             {lang === "ar" && (
-              <p className="text-[var(--text)] font-semibold">eng</p>
+              <p className="text-[var(--text)] font-semibold">en</p>
             )}
-            {lang === "eng" && (
+            {lang === "en" && (
               <p className=" text-[var(--text)] font-semibold">ع</p>
             )}
           </button>

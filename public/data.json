@@ -1,0 +1,368 @@
+{
+  "dashboard": {
+    "topCards": [
+      {
+        "id": 1,
+        "title": { "en": "Project Dashboard", "ar": "داشبورد المشروع" },
+        "subtitle": { "en": "New Task Assign", "ar": "تعيين مهمة جديدة" },
+        "timeAgo": { "en": "4 Hrs ago", "ar": "منذ 4 ساعات" },
+        "avatars": ["/public/img/user1.jpg", "/public/img/user2.jpg"]
+      },
+      {
+        "id": 2,
+        "title": { "en": "Admin Template", "ar": "قالب لوحة التحكم" },
+        "subtitle": { "en": "New Task Assign", "ar": "تعيين مهمة جديدة" },
+        "timeAgo": { "en": "3 Hrs ago", "ar": "منذ 3 ساعات" },
+        "avatars": ["/public/img/user3.jpg", "/public/img/user4.jpg"]
+      },
+      {
+        "id": 3,
+        "title": { "en": "Client Project", "ar": "مشروع العميل" },
+        "subtitle": { "en": "New Task Assign", "ar": "تعيين مهمة جديدة" },
+        "timeAgo": { "en": "5 Hrs ago", "ar": "منذ 5 ساعات" },
+        "avatars": ["/public/img/user5.jpg", "/public/img/user6.jpg"]
+      },
+      {
+        "id": 4,
+        "title": { "en": "Figma Design", "ar": "تصميم فيجما" },
+        "subtitle": { "en": "New Task Assign", "ar": "تعيين مهمة جديدة" },
+        "timeAgo": { "en": "1 Day ago", "ar": "منذ يوم واحد" },
+        "avatars": ["/public/img/user7.jpg", "/public/img/user8.jpg"]
+      }
+    ],
+
+    "monthlyTarget": {
+      "title": { "en": "Monthly Target", "ar": "الهدف الشهري" },
+      "series": [31.1, 68.9],
+      "labels": {
+        "pending": { "en": "Pending", "ar": "قيد الانتظار" },
+        "done": { "en": "Done", "ar": "مكتمل" }
+      }
+    },
+
+    "projectStatistics": {
+      "title": { "en": "Project Statistics", "ar": "إحصائيات المشروع" },
+      "categories": {
+        "en": ["Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct"],
+        "ar": [
+          "فبراير",
+          "مارس",
+          "أبريل",
+          "مايو",
+          "يونيو",
+          "يوليو",
+          "أغسطس",
+          "سبتمبر",
+          "أكتوبر"
+        ]
+      },
+      "series": [
+        {
+          "name": { "en": "Projects", "ar": "المشاريع" },
+          "data": [45, 50, 60, 55, 40, 65, 50, 45, 65]
+        },
+        {
+          "name": { "en": "Working Hours", "ar": "ساعات العمل" },
+          "data": [170, 185, 250, 235, 180, 200, 185, 110, 190]
+        }
+      ]
+    },
+
+    "projectSummary": {
+      "title": { "en": "Project Summary", "ar": "ملخص المشروع" },
+      "totalProjectsText": {
+        "en": "38 Total Admin & Client Projects",
+        "ar": "38 إجمالي مشاريع الإدارة والعملاء"
+      },
+      "stats": [
+        {
+          "id": "discussion",
+          "title": { "en": "Project Discussion", "ar": "مناقشة المشروع" },
+          "value": "6",
+          "unit": { "en": "Person", "ar": "أشخاص" },
+          "icon": "users",
+          "color": "#3b82f6",
+          "bgColor": "rgba(59, 130, 246, 0.15)"
+        },
+        {
+          "id": "inProgress",
+          "title": { "en": "In Progress", "ar": "قيد التنفيذ" },
+          "value": "16",
+          "unit": { "en": "Projects", "ar": "مشاريع" },
+          "icon": "compass",
+          "color": "#f59e0b",
+          "bgColor": "rgba(245, 158, 11, 0.15)"
+        },
+        {
+          "id": "completed",
+          "title": { "en": "Completed Projects", "ar": "المشاريع المكتملة" },
+          "value": "24",
+          "unit": { "en": "", "ar": "" },
+          "icon": "check-circle",
+          "color": "#ef4444",
+          "bgColor": "rgba(239, 68, 68, 0.15)"
+        },
+        {
+          "id": "delivery",
+          "title": {
+            "en": "Delivery Projects",
+            "ar": "المشاريع المجهزة للتسليم"
+          },
+          "value": "20",
+          "unit": { "en": "", "ar": "" },
+          "icon": "send",
+          "color": "#10b981",
+          "bgColor": "rgba(16, 185, 129, 0.15)"
+        }
+      ]
+    },
+
+    "completionRate": {
+      "onTimeRate": {
+        "en": "On Time Completed Rate",
+        "ar": "نسبة الإنجاز في الوقت المحدد"
+      },
+      "percentageIncrease": "↑ 59%",
+      "completedProjects": {
+        "en": "Completed Projects",
+        "ar": "المشاريع المكتملة"
+      },
+      "completionPercentage": "65%"
+    },
+
+    "kpiCards": [
+      {
+        "id": 1,
+        "title": { "en": "Active Projects", "ar": "المشاريع النشطة" },
+        "value": 85,
+        "icon": "file-text",
+        "bg": "#e0e7ff",
+        "color": "#4f46e5"
+      },
+      {
+        "id": 2,
+        "title": { "en": "Total Employees", "ar": "إجمالي الموظفين" },
+        "value": 32,
+        "icon": "users",
+        "bg": "#d1fae5",
+        "color": "#059669"
+      },
+      {
+        "id": 3,
+        "title": { "en": "Project Reviews", "ar": "مراجعات المشاريع" },
+        "value": 40,
+        "icon": "star",
+        "bg": "#e0f2fe",
+        "color": "#0284c7"
+      },
+      {
+        "id": 4,
+        "title": { "en": "New Projects", "ar": "المشاريع الجديدة" },
+        "value": 25,
+        "icon": "folder-plus",
+        "bg": "#fef3c7",
+        "color": "#d97706"
+      }
+    ],
+
+    "projectOverview": {
+      "title": { "en": "Project Overview", "ar": "نظرة عامة على المشاريع" },
+      "categories": [
+        {
+          "name": { "en": "Product Design", "ar": "تصميم المنتجات" },
+          "projects": 26,
+          "employees": 4,
+          "color": "#4A72FF"
+        },
+        {
+          "name": { "en": "Web Development", "ar": "تطوير الويب" },
+          "projects": 30,
+          "employees": 5,
+          "color": "#FF5C5C"
+        },
+        {
+          "name": { "en": "Illustration Design", "ar": "تصميم الرسومات" },
+          "projects": 12,
+          "employees": 3,
+          "color": "#22C55E"
+        },
+        {
+          "name": { "en": "UI/UX Design", "ar": "تصميم واجهات المستخدم" },
+          "projects": 8,
+          "employees": 4,
+          "color": "#EAB308"
+        }
+      ]
+    },
+
+    "dailyTasks": {
+      "title": { "en": "Daily Task", "ar": "المهام اليومية" },
+      "filterLabel": [
+        { "en": "Today", "ar": "اليوم" },
+        { "en": "yesterday", "ar": "امس" },
+        { "en": "tomorrow", "ar": "غدا" }
+      ],
+      "list": [
+        {
+          "id": 1,
+          "category": "yesterday",
+          "title": { "en": "Landing Page Design", "ar": "تصميم صفحة الهبوط" },
+          "description": {
+            "en": "Create a new landing page (SaaS Product)",
+            "ar": "إنشاء صفحة هبوط جديدة (منتج SaaS)"
+          },
+          "timeAgo": { "en": "2 Hrs ago", "ar": "منذ ساعتين" },
+          "peopleCount": { "en": "5 People", "ar": "5 أشخاص" }
+        },
+        {
+          "id": 2,
+          "category": "today",
+          "title": { "en": "Admin Dashboard", "ar": "داشبورد لوحة التحكم" },
+          "description": {
+            "en": "Create a new Admin dashboard",
+            "ar": "إنشاء لوحة تحكم إدارية جديدة"
+          },
+          "timeAgo": { "en": "3 Hrs ago", "ar": "منذ 3 ساعات" },
+          "peopleCount": { "en": "2 People", "ar": "شخصين" }
+        },
+        {
+          "id": 3,
+          "category": "tomorrow",
+          "title": { "en": "Client Work", "ar": "عمل لعميل" },
+          "description": {
+            "en": "Create a new Power Project (Sktech design)",
+            "ar": "إنشاء مشروع Power جديد (تصميم Sketch)"
+          },
+          "timeAgo": { "en": "5 Hrs ago", "ar": "منذ 5 ساعات" },
+          "peopleCount": { "en": "2 People", "ar": "شخصين" }
+        },
+        {
+          "id": 7,
+          "category": "yesterday",
+          "title": { "en": "Landing Page Design", "ar": "تصميم صفحة الهبوط" },
+          "description": {
+            "en": "Create a new landing page (SaaS Product)",
+            "ar": "إنشاء صفحة هبوط جديدة (منتج SaaS)"
+          },
+          "timeAgo": { "en": "2 Hrs ago", "ar": "منذ ساعتين" },
+          "peopleCount": { "en": "5 People", "ar": "5 أشخاص" }
+        },
+        {
+          "id": 8,
+          "category": "today",
+          "title": { "en": "Admin Dashboard", "ar": "داشبورد لوحة التحكم" },
+          "description": {
+            "en": "Create a new Admin dashboard",
+            "ar": "إنشاء لوحة تحكم إدارية جديدة"
+          },
+          "timeAgo": { "en": "3 Hrs ago", "ar": "منذ 3 ساعات" },
+          "peopleCount": { "en": "2 People", "ar": "شخصين" }
+        },
+        {
+          "id": 9,
+          "category": "tomorrow",
+          "title": { "en": "Client Work", "ar": "عمل لعميل" },
+          "description": {
+            "en": "Create a new Power Project (Sktech design)",
+            "ar": "إنشاء مشروع Power جديد (تصميم Sketch)"
+          },
+          "timeAgo": { "en": "5 Hrs ago", "ar": "منذ 5 ساعات" },
+          "peopleCount": { "en": "2 People", "ar": "شخصين" }
+        }
+      ]
+    },
+
+    "teamMembers": {
+      "title": { "en": "Team Members", "ar": "أعضاء الفريق" },
+      "filterLabel": [
+        { "id": 1, "en": "Active", "ar": "نشط" },
+        { "id": 2, "en": "Offline", "ar": "غير نشط" }
+      ],
+      "list": [
+        {
+          "id": 1,
+          "name": "Risa Pearson",
+          "role": { "en": "UI/UX Designer", "ar": "مصمم واجهات المستخدم" },
+          "experience": { "en": "2.5 Year Experience", "ar": "خبرة 2.5 سنة" },
+          "avatar": "/public/img/user1.jpg",
+          "active": true
+        },
+        {
+          "id": 2,
+          "name": "Margaret D. Evans",
+          "role": { "en": "PHP Developer", "ar": "مطور PHP" },
+          "experience": { "en": "2 Year Experience", "ar": "خبرة سنتين" },
+          "avatar": "/public/img/user2.jpg",
+          "active": true
+        },
+        {
+          "id": 3,
+          "name": "Bryan J. Luellon",
+          "role": { "en": "Front end Developer", "ar": "مطور واجهات أمامية" },
+          "experience": { "en": "1 Year Experience", "ar": "خبرة سنة واحدة" },
+          "avatar": "/public/img/user3.jpg",
+          "active": false
+        },
+        {
+          "id": 4,
+          "name": "Kathryn S. Collier",
+          "role": { "en": "UI/UX Designer", "ar": "مصممة واجهات المستخدم" },
+          "experience": { "en": "3 Year Experience", "ar": "خبرة 3 سنوات" },
+          "avatar": "/public/img/user4.jpg",
+          "active": true
+        },
+        {
+          "id": 5,
+          "name": "Kathryn S. Collier",
+          "role": { "en": "UI/UX Designer", "ar": "مصممة واجهات المستخدم" },
+          "experience": { "en": "3 Year Experience", "ar": "خبرة 3 سنوات" },
+          "avatar": "/public/img/user6.jpg",
+          "active": false
+        },
+        {
+          "id": 6,
+          "name": "Kathryn S. Collier",
+          "role": { "en": "UI/UX Designer", "ar": "مصممة واجهات المستخدم" },
+          "experience": { "en": "3 Year Experience", "ar": "خبرة 3 سنوات" },
+          "avatar": "/public/img/user5.jpg",
+          "active": false
+        },
+        {
+          "id": 7,
+          "name": "Kathryn S. Collier",
+          "role": { "en": "UI/UX Designer", "ar": "مصممة واجهات المستخدم" },
+          "experience": { "en": "3 Year Experience", "ar": "خبرة 3 سنوات" },
+          "avatar": "/public/img/user6.jpg",
+          "active": false
+        },
+        {
+          "id": 8,
+          "name": "Kathryn S. Collier",
+          "role": { "en": "UI/UX Designer", "ar": "مصممة واجهات المستخدم" },
+          "experience": { "en": "3 Year Experience", "ar": "خبرة 3 سنوات" },
+          "avatar": "/public/img/user8.jpg",
+          "active": true
+        },
+        {
+          "id": 9,
+          "name": "Timothy Kauper",
+          "role": { "en": "Backend Developer", "ar": "مطور خلفية النظام" },
+          "experience": { "en": "2 Year Experience", "ar": "خبرة سنتين" },
+          "avatar": "/public/img/user5.jpg",
+          "active": false
+        }
+      ]
+    }
+  },
+
+  "about": {
+    "title": { "en": "About Us", "ar": "من نحن" },
+    "description": { "en": "", "ar": "" }
+  },
+
+  "settings": {
+    "title": { "en": "Settings", "ar": "الإعدادات" },
+    "profile": {},
+    "preferences": {}
+  }
+}

@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 const initialState = localStorage.getItem("theme") || "dark";
-const thelang = localStorage.getItem("lang") || "eng";
+const thelang = localStorage.getItem("lang") || "en";
 const initialStatetheme = {
   theme: initialState,
   lang: thelang,
@@ -17,7 +17,7 @@ export const setTheme = createSlice({
 
     // control lang
     toggelLang: (state) => {
-      state.lang = state.lang === "eng" ? "ar" : "eng";
+      state.lang = state.lang === "en" ? "ar" : "en";
       localStorage.setItem("lang", state.lang);
     },
   },

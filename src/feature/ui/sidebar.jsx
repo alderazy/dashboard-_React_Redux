@@ -5,7 +5,6 @@ import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import srcImg from "../../../public/img/logo.png";
 import { LayoutDashboard, Info, FolderKanban } from "lucide-react";
-import { isAction } from "@reduxjs/toolkit";
 
 const NAV_ITEMS = [
   {

@@ -16,7 +16,7 @@ function App() {
       ? document.documentElement.classList.add("dark")
       : document.documentElement.classList.remove("dark");
     // set lang
-    lang === "eng"
+    lang === "en"
       ? document.documentElement.setAttribute("dir", "ltr")
       : document.documentElement.setAttribute("dir", "rtl");
 
