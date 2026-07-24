@@ -48,7 +48,7 @@ export default function Home() {
 
           {/* الابن الثاني: قسم الرسوم البيانية الوسطى */}
           <div>
-            <div className="grid gap-5 mt-4 min-w-100 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-5 mt-4 min-w-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
               {/* الرسم البياني الصغير يأخذ عمود واحد */}
               <div className="col-span-1">
                 <Card>
@@ -100,7 +100,7 @@ export default function Home() {
                 <ProjectOverview />
               </div>
               {/* قسم الرسم البياني المصغر */}
-              <div className="w-full md:w-0 md:flex-1 text-center">
+              <div className="w-full md:w-0 min-h-[400px] md:flex-1 text-center">
                 <CharXm />
               </div>
             </div>
