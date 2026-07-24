@@ -198,7 +198,7 @@
     "dailyTasks": {
       "title": { "en": "Daily Task", "ar": "المهام اليومية" },
       "filterLabel": [
-        { "en": "Today", "ar": "اليوم" },
+        { "en": "today", "ar": "اليوم" },
         { "en": "yesterday", "ar": "امس" },
         { "en": "tomorrow", "ar": "غدا" }
       ],
@@ -216,6 +216,17 @@
         },
         {
           "id": 2,
+          "category": "today",
+          "title": { "en": "Admin Dashboard", "ar": "داشبورد لوحة التحكم" },
+          "description": {
+            "en": "Create a new Admin dashboard",
+            "ar": "إنشاء لوحة تحكم إدارية جديدة"
+          },
+          "timeAgo": { "en": "3 Hrs ago", "ar": "منذ 3 ساعات" },
+          "peopleCount": { "en": "2 People", "ar": "شخصين" }
+        },
+        {
+          "id": 20,
           "category": "today",
           "title": { "en": "Admin Dashboard", "ar": "داشبورد لوحة التحكم" },
           "description": {
