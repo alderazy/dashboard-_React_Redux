@@ -6,28 +6,28 @@
         "title": { "en": "Project Dashboard", "ar": "داشبورد المشروع" },
         "subtitle": { "en": "New Task Assign", "ar": "تعيين مهمة جديدة" },
         "timeAgo": { "en": "4 Hrs ago", "ar": "منذ 4 ساعات" },
-        "avatars": ["/public/img/user1.jpg", "/public/img/user2.jpg"]
+        "avatars": ["/img/user1.jpg", "/img/user2.jpg"]
       },
       {
         "id": 2,
         "title": { "en": "Admin Template", "ar": "قالب لوحة التحكم" },
         "subtitle": { "en": "New Task Assign", "ar": "تعيين مهمة جديدة" },
         "timeAgo": { "en": "3 Hrs ago", "ar": "منذ 3 ساعات" },
-        "avatars": ["/public/img/user3.jpg", "/public/img/user4.jpg"]
+        "avatars": ["/img/user3.jpg", "/img/user4.jpg"]
       },
       {
         "id": 3,
         "title": { "en": "Client Project", "ar": "مشروع العميل" },
         "subtitle": { "en": "New Task Assign", "ar": "تعيين مهمة جديدة" },
         "timeAgo": { "en": "5 Hrs ago", "ar": "منذ 5 ساعات" },
-        "avatars": ["/public/img/user5.jpg", "/public/img/user6.jpg"]
+        "avatars": ["/img/user5.jpg", "/img/user6.jpg"]
       },
       {
         "id": 4,
         "title": { "en": "Figma Design", "ar": "تصميم فيجما" },
         "subtitle": { "en": "New Task Assign", "ar": "تعيين مهمة جديدة" },
         "timeAgo": { "en": "1 Day ago", "ar": "منذ يوم واحد" },
-        "avatars": ["/public/img/user7.jpg", "/public/img/user8.jpg"]
+        "avatars": ["/img/user7.jpg", "/img/user8.jpg"]
       }
     ],
 
@@ -295,7 +295,7 @@
           "name": "Risa Pearson",
           "role": { "en": "UI/UX Designer", "ar": "مصمم واجهات المستخدم" },
           "experience": { "en": "2.5 Year Experience", "ar": "خبرة 2.5 سنة" },
-          "avatar": "/public/img/user1.jpg",
+          "avatar": "/img/user1.jpg",
           "active": true
         },
         {
@@ -303,7 +303,7 @@
           "name": "Margaret D. Evans",
           "role": { "en": "PHP Developer", "ar": "مطور PHP" },
           "experience": { "en": "2 Year Experience", "ar": "خبرة سنتين" },
-          "avatar": "/public/img/user2.jpg",
+          "avatar": "/img/user2.jpg",
           "active": true
         },
         {
@@ -311,7 +311,7 @@
           "name": "Bryan J. Luellon",
           "role": { "en": "Front end Developer", "ar": "مطور واجهات أمامية" },
           "experience": { "en": "1 Year Experience", "ar": "خبرة سنة واحدة" },
-          "avatar": "/public/img/user3.jpg",
+          "avatar": "/img/user3.jpg",
           "active": false
         },
         {
@@ -319,7 +319,7 @@
           "name": "Kathryn S. Collier",
           "role": { "en": "UI/UX Designer", "ar": "مصممة واجهات المستخدم" },
           "experience": { "en": "3 Year Experience", "ar": "خبرة 3 سنوات" },
-          "avatar": "/public/img/user4.jpg",
+          "avatar": "/img/user4.jpg",
           "active": true
         },
         {
@@ -327,7 +327,7 @@
           "name": "Kathryn S. Collier",
           "role": { "en": "UI/UX Designer", "ar": "مصممة واجهات المستخدم" },
           "experience": { "en": "3 Year Experience", "ar": "خبرة 3 سنوات" },
-          "avatar": "/public/img/user6.jpg",
+          "avatar": "/img/user6.jpg",
           "active": false
         },
         {
@@ -335,7 +335,7 @@
           "name": "Kathryn S. Collier",
           "role": { "en": "UI/UX Designer", "ar": "مصممة واجهات المستخدم" },
           "experience": { "en": "3 Year Experience", "ar": "خبرة 3 سنوات" },
-          "avatar": "/public/img/user5.jpg",
+          "avatar": "/img/user5.jpg",
           "active": false
         },
         {
@@ -343,7 +343,7 @@
           "name": "Kathryn S. Collier",
           "role": { "en": "UI/UX Designer", "ar": "مصممة واجهات المستخدم" },
           "experience": { "en": "3 Year Experience", "ar": "خبرة 3 سنوات" },
-          "avatar": "/public/img/user6.jpg",
+          "avatar": "/img/user6.jpg",
           "active": false
         },
         {
@@ -351,7 +351,7 @@
           "name": "Kathryn S. Collier",
           "role": { "en": "UI/UX Designer", "ar": "مصممة واجهات المستخدم" },
           "experience": { "en": "3 Year Experience", "ar": "خبرة 3 سنوات" },
-          "avatar": "/public/img/user8.jpg",
+          "avatar": "/img/user8.jpg",
           "active": true
         },
         {
@@ -359,7 +359,7 @@
           "name": "Timothy Kauper",
           "role": { "en": "Backend Developer", "ar": "مطور خلفية النظام" },
           "experience": { "en": "2 Year Experience", "ar": "خبرة سنتين" },
-          "avatar": "/public/img/user5.jpg",
+          "avatar": "/img/user5.jpg",
           "active": false
         }
       ]

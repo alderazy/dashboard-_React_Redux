@@ -48,7 +48,7 @@ export default function Home() {
 
           {/* الابن الثاني: قسم الرسوم البيانية الوسطى */}
           <div>
-            <div className="grid gap-5 mt-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-5 mt-4 min-w-100 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
               {/* الرسم البياني الصغير يأخذ عمود واحد */}
               <div className="col-span-1">
                 <Card>
@@ -91,8 +91,8 @@ export default function Home() {
         </div>
 
         {/* ==================== الجزء الرابع: القسم السفلي للوحة التحكم (4 أعمدة فرعية) ==================== */}
-        <div className="col-span-12 ">
-          <div className="grid grid-cols-4  gap-4">
+        <div className="col-span-12 min-w-[200px]">
+          <div className="grid grid-cols-4 min-w-[200px] min-h-[400px]  gap-4">
             {/* الجزء الأيسر السفلي: النظرة العامة والرسم البياني المصغر */}
             <div className="col-span-4 xl:col-span-2 flex flex-wrap gap-4 rounded-lg p-3 w-full h-full shadow bg-[var(--card)]">
               {/* قسم النظرة العامة على المشروع */}
