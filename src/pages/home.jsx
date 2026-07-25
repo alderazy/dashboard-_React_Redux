@@ -44,7 +44,7 @@ export default function Home() {
 
           {/* الابن الثاني: قسم الرسوم البيانية الوسطى */}
           <div className="grow flex">
-            <div className="grid gap-5 mt-4 min-w-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-5 mt-4 min-w-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grow">
               {/* الرسم البياني الصغير يأخذ عمود واحد */}
               <div className="col-span-1">
                 <Card>
@@ -53,7 +53,7 @@ export default function Home() {
               </div>
 
               {/* الرسم البياني الكبير يأخذ عمودين في الشاشات الكبيرة */}
-              <div className="col-span-1 lg:col-span-2 ">
+              <div className="col-span-1  lg:col-span-2 ">
                 <Card>
                   <Charbg />
                 </Card>
