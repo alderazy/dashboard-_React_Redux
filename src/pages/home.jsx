@@ -18,18 +18,14 @@ import Daily from "../components/home/daily"; // مكون عرض المهام ا
 
 export default function Home() {
   // استخراج دالة الترجمة t وجهاز التحكم في اللغة i18n
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   // معرفة اللغة الحالية المطبقة في الواجهة (ar أو en)
-  const lang = i18n.language;
 
   // أوبجكت مرجعي لترجمة اسم الصفحة
-  const namePage = { ar: "لوحة التحكم", en: "dashboard" };
 
   // ثوابت لتسهيل إعادة استخدام Tailwind Classes المتكررة
-  const h = "text-[var(--text-heading)] font-bold"; // تنسيق العناوين الرئيسية
   const p = "text-[var(--text)]"; // تنسيق النصوص العادية
-  const round = "w-full h-full rounded-full"; // تنسيق العناصر الدائرية
 
   return (
     <div className="py-4  ">
@@ -39,15 +35,15 @@ export default function Home() {
       {/* الحاوية الرئيسية لنظام الشبكة (Grid System Component - 12 Columns) */}
       <div className="grid grid-cols-12 gap-4 w-full">
         {/* ==================== الجزء الأول: العمود الأيسر/الرئيسي (9 أعمدة في الشاشات الكبيرة) ==================== */}
-        <div className="col-span-12  xl:col-span-9 ">
+        <div className="col-span-12  xl:col-span-9  flex flex-col">
           {/* الابن الأول: الكروت العلوية المختصرة */}
-          <div>
+          <div className="shrink-0">
             <Top></Top>
             {/* القائمة الملغاة كانت تستعرض كروت تجريبية (Card 1, 2, 3, 4) */}
           </div>
 
           {/* الابن الثاني: قسم الرسوم البيانية الوسطى */}
-          <div>
+          <div className="grow flex">
             <div className="grid gap-5 mt-4 min-w-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
               {/* الرسم البياني الصغير يأخذ عمود واحد */}
               <div className="col-span-1">
@@ -57,7 +53,7 @@ export default function Home() {
               </div>
 
               {/* الرسم البياني الكبير يأخذ عمودين في الشاشات الكبيرة */}
-              <div className="col-span-1 lg:col-span-2 h-100">
+              <div className="col-span-1 lg:col-span-2 ">
                 <Card>
                   <Charbg />
                 </Card>
